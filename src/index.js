@@ -1,6 +1,14 @@
 import React from 'react'
-import styles from './styles.module.css'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export const Modal = ({ text, textBtn, functionBtn }) => {
+  return (
+    <div className='modal-bg'>
+      <div className='modal-ctn'>
+        <span className='modal-msg'>{text}</span>
+        <button className='modal-btn' onClick={functionBtn}>
+          {textBtn}
+        </button>
+      </div>
+    </div>
+  )
 }
