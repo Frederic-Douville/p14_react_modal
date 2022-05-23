@@ -15,14 +15,38 @@ npm install --save p14-react-modal-fred_dou
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'p14-react-modal-fred_dou'
-import 'p14-react-modal-fred_dou/dist/index.css'
+import Modal from 'p14-react-modal-fred_dou'
+import 'modal.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    function onClickTypeFunction(event){
+      alert('This is an onclick event alert !')
+    }
+    return (
+      <Modal
+        text='some text on the modal'
+        textBtn='some text on the button'
+        functionBtn={onClickTypeFunction}
+      />
+    )
   }
 }
+
+//Classnames of the modal must be include on a css files
+.modal-bg{
+  'classname of the modal background'
+}
+.modal-ctn{
+  'classname of the modal container'
+}
+.modal-msg{
+  'classname of the modal text'
+}
+.modal-btn{
+  'classname of the modal button'
+}
+
 ```
 
 ## License
