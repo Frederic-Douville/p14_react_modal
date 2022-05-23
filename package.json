@@ -1,6 +1,6 @@
 {
-  "name": "p14-react-modal-fred_dou",
-  "version": "1.0.0",
+  "name": "p14-react-modal-ocr-fred_dou",
+  "version": "1.1.0",
   "description": "This is a react modal component",
   "author": "Frederic-Douville",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^18.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
